@@ -1,0 +1,15 @@
+export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/share/python:$PATH"
+
+# commen user prompt color
+PS1='\[\e[1;32m\][\u@\h \W]\$\[\e[0m\] '
+
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+
+#256 color
+if [ -e /usr/share/terminfo/x/xterm-256color ]; then
+        export TERM='xterm-256color'
+else
+        export TERM='xterm-color'
+fi

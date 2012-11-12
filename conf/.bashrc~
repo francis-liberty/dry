@@ -1,0 +1,26 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# User specific aliases and functions
+
+# mongodb
+# alias mongod='mongod run --config /usr/local/etc/mongod.conf'
+
+# Emacs
+alias emacs='emacsclient -t -a ""'
+
+# Eclim
+alias eclimd=/home/francis/Documents/eclipse/eclimd
+
+# Tsinghua WIFI
+alias tunet=/home/francis/Downloads/TUNet_linux/TUNet64
+
+# goagent
+alias go='python2 ~/goagent/local/proxy.py'
+
+# scale sbt
+alias csbt='/home/francis/Dropbox/Coder/fp/sbt/bin/sbt'
