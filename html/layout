@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body onload="initialize()">
+    <div id="map_canvas" style="width:90%; height:100%; float:left;background-color:#EEEEEE">left div</div>
+    <div id="control" style="width:10%; height:100%; float:right;">
+      <button type="button">start</button>
+    </div>
+  </body>
+</html>  

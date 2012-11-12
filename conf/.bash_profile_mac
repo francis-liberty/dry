@@ -13,3 +13,12 @@ if [ -e /usr/share/terminfo/x/xterm-256color ]; then
 else
         export TERM='xterm-color'
 fi
+
+# ================ git =================
+alias ga='git add'
+alias gc='git commit -a -m'
+alias gs='git status'
+alias gp='git push origin osxml'
+alias gck='git checkout'
+
+alias mou='/Applications/Mou.app/Contents/MacOS/Mou'

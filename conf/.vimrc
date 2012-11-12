@@ -68,7 +68,8 @@ endif
 " 256 color
 set t_Co=256
 set background=dark
-colorscheme solarized
+colorscheme morning
+"colorscheme solarized
 "colorscheme molokai
 "colorscheme delek
 
