@@ -35,6 +35,7 @@ Bundle 'pangloss/vim-javascript'
 " vim-scripts repos
 Bundle 'L9'
 Bundle 'FuzzyFinder'
+Bundle 'pyflakes.vim'
 
 " non github repos
 Bundle 'git://git.wincent.com/command-t.git'
@@ -52,6 +53,12 @@ filetype plugin indent on     " required!
 " NOTE: comments after Bundle command are not allowed..
 "
 " =============================== general settings ===========================
+" remove scroll bar
+set guioptions-=r  "remove right-hand scroll bar
+"set guioptions-=m  "remove menu bar
+"set guioptions-=T  "remove toolbar
+set autochdir
+
 syntax enable
 " cursor difference insert mode 
 if &term =~ "xterm\\|rxvt"
@@ -68,8 +75,8 @@ endif
 " 256 color
 set t_Co=256
 set background=dark
-colorscheme morning
-"colorscheme solarized
+"colorscheme morning
+colorscheme solarized
 "colorscheme molokai
 "colorscheme delek
 
@@ -87,8 +94,9 @@ set incsearch
 set showmatch
 
 "line number" 
-"set number
-"set ruler
+set number
+set ruler
+set relativenumber
 "
 ""Taglist"
 filetype on

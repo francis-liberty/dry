@@ -22,3 +22,5 @@ alias gp='git push origin osxml'
 alias gck='git checkout'
 
 alias mou='/Applications/Mou.app/Contents/MacOS/Mou'
+
+alias eclim='/Applications/eclipse/eclimd'
