@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
+    </dependencies>
+    <scenes>
+        <!--Autosize View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="AutosizeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2s-iY-T1a">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="N3D-8F-zg4"/>
+                                    <constraint firstAttribute="height" constant="114" id="lnU-fZ-ZnU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="foo">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghl-S5-D3k">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="113" id="0u8-xh-NBE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="bar">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ghl-S5-D3k" secondAttribute="bottom" constant="149" id="6bi-7u-MsK"/>
+                            <constraint firstItem="B2s-iY-T1a" firstAttribute="leading" secondItem="ghl-S5-D3k" secondAttribute="leading" type="default" id="IhH-rG-fqz"/>
+                            <constraint firstItem="B2s-iY-T1a" firstAttribute="top" secondItem="3" secondAttribute="top" constant="66" id="iny-Um-FMd"/>
+                            <constraint firstItem="ghl-S5-D3k" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="tiu-Kd-0Wx"/>
+                            <constraint firstItem="B2s-iY-T1a" firstAttribute="trailing" secondItem="ghl-S5-D3k" secondAttribute="trailing" type="default" id="ySy-jW-XQW"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="foos" destination="B2s-iY-T1a" id="5Tg-lc-7D2"/>
+                        <outletCollection property="foos" destination="B2s-iY-T1a" id="7FW-Pm-sbA"/>
+                        <outletCollection property="bars" destination="ghl-S5-D3k" id="lfv-Bd-mOo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15" y="60"/>
+        </scene>
+        <!--Autosize View Controller-->
+        <scene sceneID="VyH-TU-VJ4">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dco-Iz-0Bh" sceneMemberID="firstResponder"/>
+                <viewController id="e1Q-CK-rf4" customClass="AutosizeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ys6-ZV-Ktx">
+                        <rect key="frame" x="0.0" y="20" width="568" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGl-rp-wWq">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="AHn-Cv-6Tt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="foo">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xp4-e9-Qw4">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="113" id="UVI-wY-9jD"/>
+                                    <constraint firstAttribute="width" constant="132" id="WTe-1N-msU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="bar">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xp4-e9-Qw4" firstAttribute="top" secondItem="ys6-ZV-Ktx" secondAttribute="top" constant="93" id="Ezu-Rk-edF"/>
+                            <constraint firstItem="gGl-rp-wWq" firstAttribute="top" secondItem="xp4-e9-Qw4" secondAttribute="top" type="default" id="TEs-gA-0DT"/>
+                            <constraint firstItem="gGl-rp-wWq" firstAttribute="bottom" secondItem="xp4-e9-Qw4" secondAttribute="bottom" type="default" id="fSL-8A-AUo"/>
+                            <constraint firstItem="xp4-e9-Qw4" firstAttribute="leading" secondItem="ys6-ZV-Ktx" secondAttribute="leading" constant="90" id="oBp-Xl-Zi4"/>
+                            <constraint firstAttribute="trailing" secondItem="gGl-rp-wWq" secondAttribute="trailing" constant="95" id="wgd-ay-YZP"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outletCollection property="foos" destination="gGl-rp-wWq" id="eaN-oW-Bpi"/>
+                        <outletCollection property="bars" destination="xp4-e9-Qw4" id="JC5-Ai-DI6"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="384" y="60"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="AutosizeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AutosizeViewController.h"/>
+            <relationships>
+                <relationship kind="outletCollection" name="bars" candidateClass="UIButton"/>
+                <relationship kind="outletCollection" name="foos" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

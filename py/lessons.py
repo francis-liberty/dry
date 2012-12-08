@@ -15,3 +15,13 @@ def cut(self, user_id_list):
     for end1, end2 in sub_netx.gr.edges():
         sub_netx.gr[end1][end2] = self.gr[end1][end2]
 
+'''In a fruitful function, it is a good idea to ensure that every possible path 
+through the pro- gram hits a return statement. This function is incorrect because 
+if x happens to be 0, neither condition is true, and the function ends without hitting 
+a return statement (return None, bug).
+'''
+def absolute_value(x):
+    if x < 0:
+        return -x
+    if x > 0:
+        return x

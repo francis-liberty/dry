@@ -21,6 +21,8 @@ Bundle 'vim-scripts/TaskList.vim'
 " run terminal inside vim
 Bundle 'rson/vim-conque'
 " for R language
+" for scala
+Bundle 'derekwyatt/vim-scala'
 Bundle 'ervandew/screen'
 Bundle 'jalvesaq/VimCom' 
 Bundle 'jcfaria/Vim-R-plugin'
@@ -74,9 +76,11 @@ endif
 
 " 256 color
 set t_Co=256
-set background=dark
+"set background=dark
+set background=light
+colorscheme desert
 "colorscheme morning
-colorscheme solarized
+"colorscheme solarized
 "colorscheme molokai
 "colorscheme delek
 
@@ -135,5 +139,5 @@ au BufWinEnter * silent loadview
 
 " ========================== python ===================================
 " Highlight end of line chars
-highlight WhitespaceEOL ctermbg=red guibg=red
-match WhitespaceEOL /\s\+$/
+" highlight WhitespaceEOL ctermbg=red guibg=red
+" match WhitespaceEOL /\s\+$/
